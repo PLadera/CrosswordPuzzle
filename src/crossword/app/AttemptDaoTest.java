@@ -12,7 +12,7 @@ public class AttemptDaoTest {
         try {
             int puzzleId = new PuzzleDao().findAll().get(0).getId();
 
-            int id1 = dao.insert(puzzleId, "O'Brien", 95);
+            int id1 = dao.insert(puzzleId, "Karl", 95);
             int id2 = dao.insert(puzzleId, "Paul", 60);
 
             System.out.println("Leaderboard (fastest first):");
