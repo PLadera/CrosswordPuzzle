@@ -29,15 +29,14 @@ INSERT INTO entry (puzzle_id, word, clue, start_row, start_col, direction) VALUE
     ((SELECT id FROM puzzle WHERE title = 'Pinoy Pride'), 'BOHOL', 'Home of the Chocolate Hills', 3, 9, 'DOWN');
 
 -- Java Pro (HARD): 10 words
-INSERT INTO puzzle (title, difficulty) VALUES ('Java Pro', 'HARD');
+-- Human Body (HARD): 8 words
+INSERT INTO puzzle (title, difficulty) VALUES ('Human Body', 'HARD');
 INSERT INTO entry (puzzle_id, word, clue, start_row, start_col, direction) VALUES
-    ((SELECT id FROM puzzle WHERE title = 'Java Pro'), 'SERVICE', 'Layer that holds your business rules', 0, 0, 'ACROSS'),
-    ((SELECT id FROM puzzle WHERE title = 'Java Pro'), 'THREAD', 'Unit of concurrent execution', 2, 4, 'ACROSS'),
-    ((SELECT id FROM puzzle WHERE title = 'Java Pro'), 'ABSTRACT', 'Keyword for a class that can''t be instantiated', 4, 0, 'ACROSS'),
-    ((SELECT id FROM puzzle WHERE title = 'Java Pro'), 'STATIC', 'Belongs to the class, not an instance', 6, 2, 'ACROSS'),
-    ((SELECT id FROM puzzle WHERE title = 'Java Pro'), 'COLLECTION', 'Root interface of List and Set', 8, 0, 'ACROSS'),
-    ((SELECT id FROM puzzle WHERE title = 'Java Pro'), 'INTERFACE', 'Contract of method signatures a class can implement', 0, 4, 'DOWN'),
-    ((SELECT id FROM puzzle WHERE title = 'Java Pro'), 'DAO', 'Pattern that isolates database access code', 1, 8, 'DOWN'),
-    ((SELECT id FROM puzzle WHERE title = 'Java Pro'), 'JDBC', 'API that connects Java to relational databases', 2, 1, 'DOWN'),
-    ((SELECT id FROM puzzle WHERE title = 'Java Pro'), 'STRING', 'Immutable sequence of characters', 4, 9, 'DOWN'),
-    ((SELECT id FROM puzzle WHERE title = 'Java Pro'), 'SQL', 'Language used to talk to MySQL', 6, 2, 'DOWN');
+    ((SELECT id FROM puzzle WHERE title = 'Human Body'), 'TENDON', 'Which tough band of tissue connects a muscle to a bone?', 0, 8, 'DOWN'),
+    ((SELECT id FROM puzzle WHERE title = 'Human Body'), 'ARTERY', 'What type of blood vessel carries blood away from the heart?', 1, 0, 'DOWN'),
+    ((SELECT id FROM puzzle WHERE title = 'Human Body'), 'KIDNEY', 'Which organ removes waste and excess water from the blood to make urine?', 1, 4, 'ACROSS'),
+    ((SELECT id FROM puzzle WHERE title = 'Human Body'), 'DIAPHRAGM', 'Which muscle below the lungs contracts and moves downward when you breathe in?', 1, 6, 'DOWN'),
+    ((SELECT id FROM puzzle WHERE title = 'Human Body'), 'PANCREAS', 'Which organ produces both insulin and enzymes that help digest food?', 2, 2, 'DOWN'),
+    ((SELECT id FROM puzzle WHERE title = 'Human Body'), 'TRACHEA', 'Which tube carries air from the voice box toward the lungs?', 3, 0, 'ACROSS'),
+    ((SELECT id FROM puzzle WHERE title = 'Human Body'), 'RETINA', 'Which light-sensitive layer at the back of the eye converts light into electrical signals?', 7, 1, 'ACROSS'),
+    ((SELECT id FROM puzzle WHERE title = 'Human Body'), 'FEMUR', 'Which bone in the thigh is the longest bone in the human body?', 9, 4, 'ACROSS');
